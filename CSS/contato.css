@@ -1,0 +1,143 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fundo {
+    background-color: rgba(9, 19, 20, 0.88);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 39, 39);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 20px 50px;
+    background-color: rgb(32, 39, 39);
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+
+li a:hover {
+    background-color: rgb(73, 73, 71);
+    color: rgb(255, 227, 136);
+    font-weight: bold;
+}
+
+li a.contato {
+    color: rgb(255, 227, 136);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bloco {
+    background-image: linear-gradient(to right, rgb(30, 31, 34), rgb(32, 39, 39));
+    outline: groove rgba(255, 227, 136, 0.6);
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+#titForm {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px 5px 5px;
+    background-color: #4f4f4f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+label {
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    bottom: 10%;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+}
+
+span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+input:focus + label span,
+input:valid + label span {
+    transform: translateY(-100%);
+    font-size: 13px;
+    color: rgb(255, 227, 136);
+}
+
+textarea:focus + label span,
+textarea:valid + label span {
+    transform: translateY(-500%);
+    font-size: 13px;
+    color: rgb(255, 227, 136);
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+button {
+    grid-column: span 2;
+    padding: 12px 20px;
+    background-color: rgb(255, 227, 136);
+    color: rgb(32, 39, 39);
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(243, 187, 115);
+}

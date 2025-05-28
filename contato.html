@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="./CSS/contato.css">
+</head>
+<body class="fundo">
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre mim</a></li>
+        <li><a href="./pagina.html">Recomendações</a></li>
+        <li><a href="./contato.html" class="contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="bloco">
+        <h2 id="titForm">ENTRE EM CONTATO</h2>
+        <form>
+          <div class="form-group">
+            <input id="nome" name="name" autocomplete="off" required>
+            <label for="name"><span>Nome completo</span></label>
+          </div>
+
+          <div class="form-group">
+            <input id="email" name="email" autocomplete="off" required>
+            <label for="email"><span>Email</span></label>
+          </div>
+
+          <div class="form-group">
+            <input id="fone" name="phone" autocomplete="off" required>
+            <label for="phone"><span>Telefone</span></label>
+          </div>
+
+          <div class="form-group">
+            <input id="assunto" name="subject" autocomplete="off" required>
+            <label for="subject"><span>Assunto</span></label>
+          </div>
+
+          <div class="form-group full-width">
+            <textarea id="mensagem" name="message" rows="4" required></textarea>
+            <label for="message"><span>Mensagem</span></label>
+          </div>
+          <button type="submit" onclick="verificarFormulario()">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./JAVASCRIPT/JavaScript.js"></script>
+</body>
+</html>

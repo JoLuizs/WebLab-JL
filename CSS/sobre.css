@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+}
+
+.fundo {
+     background-color:rgba(9, 19, 20, 0.88);
+}
+
+
+.menu {
+    display: flex;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(32, 39, 39);
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100%;
+    position: fixed;
+}
+
+
+li {
+   display: inline;   
+}
+
+li a {
+    padding: 50px;
+    background-color:rgb(32, 39, 39);
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+li a:hover {
+    background-color: rgb(73, 73, 71);
+    color:rgb(255, 227, 136);
+    font-weight: bold;
+}
+
+
+li a.contato {
+    color:rgb(255, 227, 136);
+    font-size: 15px;
+}
+
+
+li a.sobre {
+    color:rgb(255, 227, 136);
+    font-size: 15px;
+}
+
+
+li a.extra {
+    color:rgb(255, 227, 136);
+    font-size: 15px;
+}
+
+
+li a.inicio {
+    color:rgb(255, 227, 136);
+    font-size: 15px;
+}
+
+
+li a:active {
+    color:rgb(243, 187, 115);
+}
+
+
+#titulo {
+    width: 75%;
+    height: 6vh;
+    padding: 10px;
+    margin: 70px auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgb(32, 39, 39); 
+    color: aliceblue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fontegoogle {
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+div.galeria {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 18%;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+div.galeria:hover {
+  border: 1px solid rgb(255, 227, 136);
+}
+
+div.galeria img {
+  width: 100%;
+  height: 180px;
+}
+
+
+.titulo-imagem {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 227, 136);
+  margin-bottom: 5px;
+  font-family:cursive;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: left;
+  background-color: rgb(32, 39, 39);
+  color: white;
+}
+
+@media (max-width: 600px) {
+    div.galeria {
+        display:none;
+    }
+}
